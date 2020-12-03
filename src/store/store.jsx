@@ -3,7 +3,7 @@ import createSagaMiddleware from "redux-saga";
 import { createLogger } from 'redux-logger';
 import rootSaga from "./sagas";
 import productReducer from './reducers/productReducer';
-
+import orderReducer from './reducers/orderReducer';
 
 const saga = createSagaMiddleware();
 
@@ -13,6 +13,7 @@ const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOO
 const store = createStore(
     combineReducers({
         productsState: productReducer,
+        orderState:orderReducer,
        
       }),
     composeEnhancers(applyMiddleware(saga, logger))

@@ -25,3 +25,31 @@ export const createSingleProductAddAction = (product) => ({
     product,
   },
 });
+
+/*** Order Actions ****/
+export const addToCart = (product) => {
+  return {
+      type: 'ADD_TO_CART',
+      payload: {
+          product,
+          quantity: 1
+      }
+  }
+};
+export const removeFromCart = (id) => {
+  return {
+      type: 'REMOVE_FROM_CART',
+      payload: {
+          productId: id
+      }
+  }
+};
+export const updateCartQuantity = (id, quantity) => {
+return {
+    type: 'UPDATE_CART_QUANTITY',
+    payload: {
+        id,
+        quantity: quantity
+    }
+}
+};

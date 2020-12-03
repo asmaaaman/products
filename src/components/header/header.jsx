@@ -10,8 +10,14 @@ const Header =({
     <a className="navbar-brand" to="/products">
     All Products
       </a>
-     
+      <ul>
+       <li>
+         items
+       </li> 
+     </ul>   
      </nav>
+
+  
      )
 };
 
