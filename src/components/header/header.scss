@@ -1,0 +1,49 @@
+.dropdown {
+    width: 60px;
+    border-radius: 10px;
+    display: flex;
+  
+    .dropdown-toggle {
+      padding: 0;
+      width: 100%;
+  
+      img {
+        border-radius: inherit;
+      }
+  
+      .fa-shopping-cart {
+        font-size: 1.5em;
+        color: red;
+      }
+  
+      &::after {
+        display: none;
+      }
+    }
+  
+    .dropdown-menu {
+      &.selected-products-menu {
+        min-width: 505px;
+  
+        @media (max-width: 520px) {
+          min-width: 400px;
+        }
+      }
+  
+      .signout {
+        color: red;
+      }
+  
+      .product-item {
+        .product-title {
+          white-space: normal;
+        }
+      }
+  
+      .review-order-btn {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+    }
+  }
+  

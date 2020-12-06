@@ -1,5 +1,5 @@
 import * as types from '../actionTypes/types';
-import action from '../actions/action'
+import * as action from '../actions/action'
 
 const INITIAL_STATE = {
   products: [],
